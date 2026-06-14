@@ -395,13 +395,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-# ----- reward -----
-height = (1.0 - math.cos(pend_angle)) / 2.0
-reward  = height
-reward -= 0.002 * height * (pend_vel ** 2) # 위에서 빠르게 돌면(스핀) 감점
-reward -= 0.01 * (self.last_action ** 2) # 부드러운 제어(미세)
-if abs(pend_angle) > 2.96706 and abs(pend_vel) < 3.0: # 꼭대기서 느리게 = balance 보너스
-    reward += 2.0
-
-# ----- termination -----
