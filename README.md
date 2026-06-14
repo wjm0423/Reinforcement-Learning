@@ -89,7 +89,7 @@ if |pend_angle| > 170° and |pend_vel| < 2:     # 꼭대기서 정지
 
 ## 5. GitHub
 
-- 저장소(public): `<여기에 본인 GitHub 저장소 URL 입력>`
+- 저장소(public): https://github.com/wjm0423/Reinforcement-Learning
 
 ## 작성자
 - 이름: 우정모
